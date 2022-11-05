@@ -19,7 +19,7 @@ def initialize(subject,data):
     notebook.add(frame2, text='Account')
     notes = Text(frame1, height = 250, width = 395, bg = "white", relief='solid', borderwidth=0, highlightthickness=0) 
     notes.insert('0.0', data)
-    notes.config(padx = 15)
+    notes.config(padx=15, pady=10)
     notes.pack()
     accountFile = open('data/account_data/account.txt','r').readlines()
     accountString = ""
